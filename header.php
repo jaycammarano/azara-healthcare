@@ -16,12 +16,14 @@
 </head> 
 
 <body>
-    <div class="header">
-        <div><img src="assets/images/logo" alt="logo"/></div>
-        <div class="end-items">
-            <div class="item">features</div>
-            <div class="item">resources</div>
-            <div class="item">security</div>
-            <div class="item" id="header-button">contact</div>
+    <header>
+        <div class="header">
+            <div class="start-items"><img src="/wp-content/themes/azara-healthcare/assets/images/logo-1.png" alt="logo"/></div>
+            <div id="end-items">
+                <div class="item">features</div>
+                <div class="item">resources</div>
+                <div class="item">security</div>
+                <button>contact</button>
+            </div>
         </div>
-    </div>
+    <header>

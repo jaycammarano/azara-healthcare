@@ -7,38 +7,69 @@ Tags: single-page-app
 Author: Jay Cammarano
 Author URI: https://github.com/jaycammarano
 */
-
-.header .end-items {
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  width: 100%;
+}
+div.header {
   display: flex;
   flex-direction: row;
-  float: right;
+  position: relative;
+  height: 82px;
+}
+div.header .start-items {
+  margin-left: 140px;
+  padding: 12px;
 }
 
-.header .end-items .item {
-  margin: 3%;
-  padding: 4%;
+div.header #end-items {
+  position: absolute;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  right: 230px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.header #end-items .item {
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 5px;
   color: #333333;
   font-family: 'Quicksand', sans-serif;
 }
 
-#header-button {
+button {
+  border: 0;
+  text-align: center;
+  font: normal normal bold 20px/23px Quicksand;
   background-color: #f7941e;
   border-radius: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: white;
 }
 
 .backsplash-primary {
+  width: 100%;
+  padding-top: 1px;
   background-color: #00aeef;
-  width: screen;
+  height: 625px;
   border-bottom: 8px solid #366eab;
   color: #ffffff;
 }
+
 .hero-content {
-  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 40%;
 }
+
 .hero-content h1 {
   text-align: left;
   font: normal normal bold 72px/77px Quicksand;
@@ -46,27 +77,55 @@ Author URI: https://github.com/jaycammarano
   font-size: 72px;
   width: 90%;
 }
+
 .hero-content h3 {
   text-align: left;
   font: normal normal bold 42px/50px Quicksand;
   letter-spacing: 0px;
+  line-height: 5%;
   font-size: 42px;
 }
-#section-2 .right-align {
-  float: right;
-  width: 40%;
+
+.hero-bubble {
+  margin-top: 8%;
+}
+
+.hero-content p {
+  width: 494px;
+}
+#section-2 {
+  color: #ffffff;
+  background: linear-gradient(to bottom, #ffffff, #ffffff 75%, #d47500 75%);
+}
+
+#section-2 .main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#section-2 .main-content .text {
+  padding-top: 106px;
+}
+
+#section-2 #details {
+  color: #333333;
+  width: 510px;
+  margin: 5%;
 }
 
 #section-2 h2 {
+  margin: 5%;
   font: normal normal bold 42px/50px Quicksand;
   letter-spacing: 0px;
   font-size: 48px;
   color: #333333;
-  width: 90%;
+  width: 510px;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font: normal normal normal 22px/34px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
 }
 
 .hero-bubble {
@@ -74,10 +133,357 @@ p {
 }
 
 #section-3 {
+  padding-top: 25px;
   background-color: #d47500;
-  height: screen;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+
+#section-3 h2 {
+  padding-top: 84px;
+  font: normal normal bold 48px/77px Quicksand;
+  letter-spacing: 0px;
+  line-height: 15px;
+}
+
+#section-3 #subtext {
+  padding-left: 350px;
+  width: 696px;
+}
+
+#img-container {
+  padding-left: 85px;
+  padding-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.card {
+  display: inline;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #dddddd;
+  width: 364px;
+  margin: 28px;
+  padding-top: 38px;
+}
+
+.card h4 {
+  width: 276px;
+  letter-spacing: -0.55px;
+  font: normal normal bold 22px/26px Quicksand;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#card p {
+  text-align: center;
+  font: normal normal normal 20px/30px Roboto;
+  color: #666666;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#second-set {
+  background: linear-gradient(to bottom, #ffffff, #ffffff 75%, #8cad44 75%);
+}
+
+#section-4 {
+  display: flex;
+  background: linear-gradient(to bottom, #d47500, #d47500 16%, #ffffff 16%);
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+#section-4 .main-content {
+  padding-top: 150px;
+}
+.backsplash-green {
+  background-color: #8cad44;
+  color: #ffffff;
+  text-align: left;
+  letter-spacing: 0px;
+}
+
+#section-4 .main-content {
+  margin: 5%;
+}
+
+#section-4 .text {
+  width: 430px;
+}
+
+#section-4 h2 {
+  text-align: left;
+  font: normal normal bold 48px/56px Quicksand;
+  letter-spacing: -1.2px;
+  color: #333333;
+}
+
+#section-4 p {
+  color: #333333;
+}
+
+#section-5 .rows {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+
+#section-5 .quote-svg {
+  position: absolute;
+  top: -60px;
+  left: -23.000003814697266px;
+}
+
+#section-5 .quote {
+  left: 99px;
+  padding-right: 493px;
+  font: normal normal bold 38px/54px Quicksand;
+  letter-spacing: 0px;
+}
+
+#section-5 .attribute {
+  line-height: 0.5cm;
+}
+
+#section-5 #attribute {
+  font: normal normal bold 24px/32px Roboto;
+}
+
+#section-5 #office {
+  font: italic normal normal 24px/32px Roboto;
+}
+
+#section-5 .logo-dot {
+  position: absolute;
+  right: 20px;
+}
+
+#section-5 .statelogo {
+  position: absolute;
+  padding: 60px;
+}
+
+#section-5 .dot {
+  width: 405px;
+  height: 405px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#section-5 .sliders {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+#section-5 .slide {
+  width: 27px;
+  height: 27px;
+  background: #ffffff4d 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+
+  margin-right: 18px;
+}
+
+#section-5 .active {
+  background-color: #ffffff;
+}
+
+#section-6 {
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+}
+.slim {
+  position: relative;
+  width: 264px;
+  height: 283px;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #dddddd;
+  margin: 54px;
+}
+
+.slim .icon {
+  padding-top: 52px;
+  padding-bottom: 25px;
+}
+
+.slim h4 {
+  padding-bottom: 35px;
+  letter-spacing: -0.55px;
+  font: normal normal bold 22px/26px Quicksand;
+}
+
+.slim .check {
+  position: absolute;
+}
+
+#section-6 h2 {
+  text-align: center;
+  font: normal normal bold 32px/37px Quicksand;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+#section-6 .check {
+  position: absolute;
+  right: -35px;
+}
+#section-6 .card {
+  padding: 4px;
+  margin: 54px;
+  padding-top: 56px;
+  padding-bottom: 35px;
+}
+
+.button {
+  margin: 2%;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#section-7 {
+  height: 676px;
+  border: 0px solid;
+  position: relative;
+}
+
+#section-7 .main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#section-7 .left-column,
+#section-7 .right-column {
+  width: 50%;
+  z-index: 99;
+}
+
+#section-7 .left-column {
+  padding-left: 138px;
+}
+#section-7 .left-column h2 {
+  width: 425px;
+}
+
+#section-7 h2 {
+  padding-top: 129px;
+  font: normal normal bold 48px/56px Quicksand;
+  z-index: 99;
+}
+
+#section-7 .left-column p {
+  font: normal normal normal 22px/29px Roboto;
+}
+
+#section-7 .text {
+  width: 40%;
+  font: normal normal medium 24px/32px Roboto;
+}
+#section-7 ul {
+  margin-left: 0px;
+  padding-left: 20px;
+  width: 466px;
+  font: normal normal normal 22px/29px Roboto;
+  letter-spacing: 0px;
+  z-index: 99;
+}
+
+#section-7 li {
+  margin-left: 0px;
+}
+
+#section-7 .dot {
+  height: 700px;
+  width: 700px;
+  background-color: #1d8ecc;
+  border-radius: 50%;
+  top: -10px;
+  left: -30px;
+  display: inline-block;
+  position: absolute;
+  z-index: 0;
+}
+
+#section-7 .right-column {
+  padding-top: 150px;
+  padding-left: 10px;
+}
+#section-7 .right-column p {
+  padding: 10px;
+
+  letter-spacing: 1.2px;
+  width: 50%;
+}
+#section-7 .right-column h2 {
+  margin: 2%;
+}
+
+input {
+  border: 0px;
+  margin: 2%;
+  border-radius: 5px;
+  width: 415px;
+  height: 30px;
+  font: normal normal normal 18px/24px Roboto;
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  padding: 3%;
+  padding-left: 138px;
   background-color: #323233;
+  z-index: 99;
+}
+
+.footer .logo {
+  padding-top: 50px;
+}
+
+.footer .two-columns {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  float: right;
+  width: 100%;
+}
+
+.footer .verticle-line {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-left: 2px solid #808180;
+  height: 300px;
+}
+
+.footer .two-columns .column {
+  width: 250px;
+}
+
+.footer .two-columns .title {
+  font: normal normal bold 20px/25px Quicksand;
+}
+
+.footer .two-columns .item {
+  margin: 7%;
 }
