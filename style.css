@@ -36,8 +36,8 @@ div.header #end-items {
 }
 
 div.header #end-items .item {
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 23px;
+  margin-right: 23px;
   padding: 5px;
   color: #333333;
   font-family: 'Quicksand', sans-serif;
@@ -413,6 +413,7 @@ p {
 }
 
 #section-7 .dot {
+  clip-path: inset(10px 0px 13px 0px);
   height: 700px;
   width: 700px;
   background-color: #1d8ecc;
